@@ -6,7 +6,7 @@ ENV NEWMAN_VERSION 5.3.2
 
 # Install newman
 RUN npm install -g newman@${NEWMAN_VERSION}
-
+RUN npm install -g newman-reporter-html
 
 WORKDIR /etc/newman
 
