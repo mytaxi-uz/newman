@@ -9,6 +9,7 @@ RUN apk add --no-cache curl
 # Install newman
 RUN npm install -g newman@${NEWMAN_VERSION}
 RUN npm install -g newman-reporter-html
+RUN npm install -g newman-reporter-htmlextra
 
 WORKDIR /etc/newman
 
